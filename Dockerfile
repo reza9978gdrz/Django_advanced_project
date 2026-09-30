@@ -14,7 +14,3 @@ RUN pip3 install --upgrade pip
 RUN pip3 install -r requirements.txt
 # Copy the Django project to the container
 COPY ./core  /app/
-# Expose the Django port
-EXPOSE 8000
-# Run Django’s development server
-CMD ["python", "manage.py", "runserver", "0.0.0.0:8000"]
